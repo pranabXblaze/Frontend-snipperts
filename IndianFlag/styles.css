@@ -1,10 +1,51 @@
 
 
 body {
-    background-color: #2e2c39;
+    background-color: #414141;
     overflow: hidden;
 }
 
+.num {
+    color: #fff;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    text-shadow: #00c464;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.dialogue {
+ text-transform: uppercase;   
+ font-size:x-large;
+ color: #fff;
+ text-align: center;
+ font-weight: bolder;
+}
+
+.container {
+    position: relative;
+    background: url("http://www.techicy.com/wp-content/uploads/2015/01/Indian-Flag-Wallpapers-HD-Images-Free-Download-2.jpg") repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+/* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+     animation: aitf 120s linear infinite;
+/* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+
+}
+/* Animate Background Image */
+ 
+@keyframes aitf {
+  0% { background-position: 45% 900%; }
+  50% { background-position: 45% 500%; }
+100%{ background-position: 45% 0%; }
+}
 .cursor {
     position: absolute;
     left: 40px;
@@ -48,10 +89,9 @@ body {
 
 .github-watermark{
     position: fixed;
-    top: 50%;
-    left: 50%;
+    bottom: 2rem ;
+    right: 10px;
     opacity: 0.5;
-    transform: translate(-50%, -50%);
     transition: opacity 0.3s ease;
     z-index: 1000;
 }
